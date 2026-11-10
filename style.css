@@ -222,3 +222,86 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+
+/* Galleria fotografica */
+
+.galleria-sedi {
+  width: 100%;
+  max-width: none;
+  margin: 2rem 0;
+  --swiper-navigation-color: var(--colore-primario);
+}
+
+.galleria-sedi .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.galleria-sedi figure {
+  margin: 0;
+}
+
+.galleria-sedi figcaption {
+  padding: 1rem 0;
+  line-height: 1.6;
+}
+
+/* Versione mobile */
+
+@media (max-width: 600px) {
+  .galleria-sedi .swiper-slide img {
+    height: 260px;
+  }
+}
+
+/* Mappa delle sedi */
+
+#mappa-sedi {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: 500px;
+  border: 0;
+  border-radius: 8px;
+  margin: 0 0 1rem;
+}
+
+.info-sedi {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+.info-sedi .sede {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.info-sedi .sede h4 {
+  margin: 0 0 0.5rem;
+}
+
+.info-sedi .sede p {
+  margin: 0 0 0.5rem;
+}
+
+.info-sedi .link-mappa {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* Posizione delle frecce della galleria */
+
+.galleria-sedi {
+  --swiper-navigation-top-offset: 275px;
+}
+
+/* Versione mobile */
+
+@media (max-width: 600px) {
+  .galleria-sedi {
+    --swiper-navigation-top-offset: 130px;
+  }
+}

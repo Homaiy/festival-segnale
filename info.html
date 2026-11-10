@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Info e luoghi— Segnale</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Segnale<span>Festival di design</span></a>
+      <nav aria-label="Navigazione principale">
+        <!-- Da completare: collegare questa voce alla Home. -->
+        <a href="index.html">Home</a>
+        <a href="programma.html">Programma</a>
+        <a href="info.html" aria-current="page">Info e luoghi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto" class="container">
+
+  <section class="intro" aria-labelledby="titolo-info">
+    <p class="eyebrow">12–13 giugno · Torino · Festival immaginario</p>
+
+    <h1 id="titolo-info">Info e luoghi</h1>
+
+    <p class="lead">
+      Scopri le sedi del festival e come raggiungerle.
+    </p>
+  </section>
+
+  <section class="content-section" aria-labelledby="titolo-galleria">
+  <h2 id="titolo-galleria">Scoprire le sedi</h2>
+
+  <div class="swiper galleria-sedi">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <figure>
+          <img src="assets/luoghi/sede-centrale.jpg"
+               alt="Sede centrale del Politecnico di Torino in Corso Duca degli Abruzzi">
+          <figcaption>
+            <strong>Sede centrale</strong><br>
+            Corso Duca degli Abruzzi 24 — Officina Nord
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="swiper-slide">
+        <figure>
+          <img src="assets/luoghi/politecnico-valentino.jpg"
+               alt="Cortile della sede del Politecnico al Valentino">
+          <figcaption>
+            <strong>Politecnico al Valentino</strong><br>
+            Viale Mattioli 39 — Spazio Forma
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="swiper-slide">
+        <figure>
+          <img src="assets/luoghi/mirafiori.jpg"
+               alt="Edificio della sede di Mirafiori a Torino">
+          <figcaption>
+            <strong>Sede di Mirafiori</strong><br>
+            Corso Luigi Settembrini 178 — Cortile Comune
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+
+  <section class="content-section" aria-labelledby="titolo-mappa">
+    <h2 id="titolo-mappa">Come arrivare</h2>
+
+    <iframe id="mappa-sedi"title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
+    src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"></iframe>
+
+    
+    <div class="info-sedi">
+
+        <a class="link-mappa" href="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528">
+        Visualizza la mappa a schermo intero</a>
+  
+  <h3>Le sedi del festival</h3>
+
+  <div class="sede">
+    <h4>Sede centrale</h4>
+    <p>Corso Duca degli Abruzzi 24, Torino</p>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Corso+Duca+degli+Abruzzi+24+Torino"
+       target="_blank" rel="noopener noreferrer">
+      Indicazioni stradali
+    </a>
+  </div>
+
+  <div class="sede">
+    <h4>Politecnico al Valentino</h4>
+    <p>Viale Mattioli 39, Torino</p>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Viale+Mattioli+39+Torino"
+       target="_blank" rel="noopener noreferrer">
+      Indicazioni stradali
+    </a>
+  </div>
+
+  <div class="sede">
+    <h4>Sede di Mirafiori</h4>
+    <p>Corso Luigi Settembrini 178, Torino</p>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=Corso+Luigi+Settembrini+178+Torino"
+       target="_blank" rel="noopener noreferrer">
+      Indicazioni stradali
+    </a>
+  </div>
+
+</div>
+
+</section>
+
+</main>
+
+  <footer class="site-footer"><div class="container"><p>Segnale · Progetto didattico · Festival immaginario</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.galleria-sedi', {
+    slidesPerView: 1,
+    loop: false,
+    autoplay: false,
+
+    keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+
+    navigation: {
+      nextEl: '.galleria-sedi .swiper-button-next',
+      prevEl: '.galleria-sedi .swiper-button-prev',
+    },
+  });
+</script>
+</body>
+</html>
