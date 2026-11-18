@@ -7,8 +7,8 @@
   --colore-primario-scuro: #23434A;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
-  --font-testo: Arial, Helvetica, sans-serif;
-  --font-titoli: Georgia, "Times New Roman", serif;
+  --font-testo: "Outfit", Arial, Helvetica, sans-serif;
+  --font-titoli:"DM Serif Display", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -44,6 +44,10 @@ a:focus-visible {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--colore-sfondo);
   padding: 1.25rem 0;
   border-bottom: 4px solid var(--colore-primario);
 }
@@ -66,16 +70,25 @@ a:focus-visible {
 
 nav {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 nav a {
-  display: inline-block;
-  margin-right: 1rem;
   padding: 0.25rem 0;
 }
 
 nav a[aria-current="page"] {
   font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 .intro {
